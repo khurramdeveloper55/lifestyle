@@ -1,0 +1,714 @@
+// Common CSS
+
+html{
+    font-size: 15px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Primary;
+}
+
+@font-face {
+    font-family: Primary;
+    src: url(../font/Georgia.ttf);
+}
+
+.inner{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+// Header Starts
+
+header{
+    background-image: url(../img/banner-sm.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+}
+
+header nav{
+    background-color:#797a8060;
+    padding-bottom: 1.5rem;
+}
+
+header .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .content .logo{
+    color: #fff ;
+}
+
+header .logo h1{
+    font-size: 2.4rem;
+    padding-top: 1.2rem;
+    font-weight: 400;
+}
+header .logo p{
+    margin-top: -2.1rem;
+    font-size: 0.9rem;
+}
+
+header .navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 1.5rem;
+}
+
+header .search-bar{
+    position: relative;
+}
+
+header .search-bar input{
+    background-color: #1f232c;
+    border-radius: 20px;
+    padding: 7px 0px;
+    padding-right: 50px;
+    padding-left: 9px;
+    border: none;
+    margin-right: 2rem;
+}
+header input::placeholder{
+    color: #fff;
+    font-size: 12px;
+}
+
+header .search-bar span{
+    width: 25px;
+    height: 25px;
+    background-color: #111316;
+    position: absolute;
+    right: 35px;
+    top: 2px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 6px;
+    cursor: pointer;
+}
+header .search-bar span:hover{
+    color: rgb(211, 194, 194);
+}
+
+// Button Toggle
+
+header #btn, header #cancel{
+    color: #fff;
+    font-size: 25px;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+header #check{
+    display: none;
+}
+
+header .menu-btn ul{
+    display: flex;
+}
+
+// Dropdown
+
+.menu-btn .dropdown-toggle{
+    position: relative;
+}
+
+.menu-btn .dropdown-menu{
+    width: 125px;
+    position: absolute;
+    top: 15px;
+    left: -15px;
+    display:flex;
+    flex-direction: column;
+    background-color: #797a8060;
+    padding: 7px 0px;
+    display: none;
+}
+.dropdown-menu hr{
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+.dropdown-menu li a{
+    padding-left: 15px;
+}
+
+header .menu-btn ul ul li{
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+header .menu-btn ul li:hover .dropdown-menu{
+    display: flex;
+}
+header .menu-btn ul li:hover .dropdown-menu li:hover{
+    background-color: rgb(133, 127, 127);
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+header .menu-btn ul li .dropdown-menu li{
+    padding-right: 0px;
+}
+
+// Dropdown Ends
+
+header .menu-btn ul li{
+    list-style: none;
+    color: #fff;
+    padding-right: 30px;
+    font-size: 0.9rem;
+}
+header .menu-btn ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+header .menu-btn ul li a:hover{
+    color:rgb(211, 194, 194);
+}
+header .menu-btn ul li a:focus{
+    color:rgb(36, 23, 23) ;
+}
+
+header .banner{
+    position: relative;
+    top: 20%;
+}
+header .banner h1{
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+
+// Submit Section Starts
+
+.full-section{
+    background-color: #e7e7e7;
+    border-bottom: 5px solid #dadada;
+    width: 100%;
+}
+.full-section .inner{
+    display: flex;
+    justify-content: space-between;
+}
+.full-section .section-txt h1{
+    color: #000;
+    font-size: 2.2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.full-section .section-btn button{
+    width: 275px;
+    height: 80px;
+    margin-top: 35px;
+    margin-right: 40px;
+    background-color: #1f232c;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: Primary;
+    cursor: pointer;
+}
+.full-section .section-btn button:hover, .full-section .section-btn button:focus{
+    color: #dfdfdf;
+    opacity: .8;
+}
+
+
+// Services Section
+
+.services{
+    display: flex;
+    margin: 6rem 0rem;
+}
+
+.car-serve, .vehicle-serve, .blind-serve{
+    display: flex;
+}
+.services span{
+    font-size: 100px;
+    color: #333333;
+}
+.services .serve-detail{
+    padding-left:20px ;
+    padding-right:20px ;
+    text-align: left;
+    margin-top: -25px;
+}
+.serve-detail h2{
+    margin-bottom: 0px;
+}
+.serve-detail hr{
+    width: 42%;
+    border: 1px solid #000;
+    margin-left: 0px;
+}
+.serve-detail p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: #979797;
+    margin-top: 0px;
+}
+
+// Photo Section Starts
+
+.photo-title{
+    display: flex;
+    width: 100%;
+}
+.header-line{
+    width: 40%;
+}
+.header-line hr{
+    width: 100%;
+    border: 1px solid #000;
+}
+.header-title{
+    width: 20%;
+    margin-top: -25px;
+    margin-left:15px;
+    font-size: 1.2rem;
+}
+
+
+// Photo Gallery
+
+.photo-gallery{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.photo-gallery img{
+    width: 100%;
+}
+.photo-one, .photo-two, .photo-three{
+    margin-bottom: 30px;
+}
+.photo-one, .photo-two, .photo-three, .photo-four, .photo-five, .photo-six{
+    transition: all 200ms ease;
+}
+.photo-one:hover, .photo-two:hover, .photo-three:hover, .photo-four:hover, .photo-five:hover, .photo-six:hover{
+    box-shadow: 0px 0px 10px -2px;
+}
+
+.photo-description{
+    display: block;
+    height: 60px;
+    background-color: #eeeeee;
+    margin-top: -5px;
+    text-align: center;
+}
+.photo-description h5{
+    font-size: 1rem;
+    margin-top: 0;
+    padding-top: 12px;
+}
+.photo-description p{
+    margin-top: -20px;
+    padding-top: 0;
+    font-size: 11px;
+    color: #979797;
+}
+
+
+// Contact Us Starts
+
+.information{
+    background-color: #e9e0e0;
+    color: #7c7c7c;
+    width: 100%;
+    padding-bottom: 40px;
+}
+.info-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.info-menu h2{
+    font-size: 1.2rem;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: #2c2c2c;
+}
+.info-menu p{
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+.info-menu h5{
+    margin-bottom: 2px;
+}
+.info-menu span{
+    font-size: 0.8rem;
+}
+.contact-info{
+    width: 15%;
+}
+.links{
+    width: 25%;
+}
+.blog{
+    width: 25%;
+}
+.newsletter{
+    width: 24%;
+}
+.links a{
+    color: #1f232c;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+.links a:hover{
+    cursor: pointer;
+    color: #7c7c7c;
+}
+.blog{
+    position: relative
+}
+.blog p{
+    padding-bottom: 0px;
+}
+.blog button{
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    background: none;
+    border: none;
+    font-family: inherit;
+    color: #1f232c;
+}
+.blog button:hover{
+    cursor: pointer;
+    color: #7c7c7c;
+}
+.newsletter input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.newsletter input::placeholder{
+    color: #000;
+}
+.newsletter button{
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1f232c;
+    text-transform: uppercase;
+    color: #fff;
+}
+.newsletter button:hover{
+    cursor: pointer;
+    color: #c7b8b8;
+}
+
+
+// Footer Starts
+
+footer{
+    background-color: #11131a;
+    color: #737373;
+    padding: 20px 0px;
+    font-size: 12px;
+}
+
+.footer-txt{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-txt span{
+    padding-top: 11px;
+}
+
+
+
+@media only screen and (max-width:1050px){
+    .inner{
+        max-width: 900px;
+    }
+    .header-title{
+        font-size: 1.1rem;
+    }
+    .photo-gallery{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 75px;
+    }
+    .photo-one, .photo-two, .photo-three, .photo-four, .photo-five, .photo-six{
+        width: 47%;
+    }
+    .photo-four{
+        margin-bottom: 30px;
+    }
+    .photo-gallery img{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:950px){
+    .info-menu{
+        flex-wrap: wrap;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .contact-info, .blog, .links, .newsletter{
+        width: 47%;
+    }
+    .contact-info{
+        order: 4;
+    }
+    .blog button{
+        bottom: 0;
+    }
+    .footer-txt{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+
+@media only screen and (max-width:875px){
+    .inner{
+        max-width: 800px;
+    }
+    header ul li a{
+        font-size: 0.9rem;
+    }
+    header label #btn{
+        display: block;
+    }
+    header .menu-btn{
+        margin-right: 30px;
+    }
+    header .menu-btn ul{
+        height: 95vh;
+        position: fixed;
+        left: -100%;
+        top: -15px;
+        width: 100%;
+        background-color: #1f232c;
+        text-align: center;
+        z-index: 111;
+        display: block;
+        transition: all 500ms ease;
+        padding-top: 30px;
+    }
+    header .menu-btn ul li{
+        padding-bottom: 5.6rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: block;
+        z-index: 222;
+    }
+
+    label #btn:hover, label #cancel:hover{
+        color: #bdaaaa;
+    }
+
+    .menu-btn .dropdown-menu{
+        width: 100%;
+        left: -22px;
+        right: 0;
+        top: 20px;
+        bottom: 0;
+        z-index: 99999;
+        background-color: #11131a;
+    }
+    .menu-btn .dropdown-menu li{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .menu-btn .dropdown-menu li a{
+        padding-left: 10px;
+    }
+
+    header .banner h1{
+        font-size: 2rem;
+    }
+
+
+    .full-section .inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .full-section .section-txt h1{
+        font-size: 1.8rem;
+    }
+    .full-section .section-btn button{
+        height: 60px;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .car-serve, .vehicle-serve, .blind-serve{
+        flex-direction: column;
+        align-items: center;
+    }
+    .buses, .vehicle, .blind{
+        margin-bottom:15px ;
+    }
+    .serve-detail h2, .serve-detail p{
+        text-align: center;
+    }
+    .serve-detail h2{
+        margin-bottom: 7px;
+    }
+    .serve-detail hr{
+        margin: 0 auto;
+        margin-bottom: 7px;
+    }
+    
+    .photo-title{
+        width: 95%;
+        margin: auto;
+    }
+    .header-line{
+        width: 35%;
+    }
+    .header-title{
+        width: 30%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .content{
+        width: 95%;
+        margin: 0 auto;
+    }
+    header .search-bar input{
+        margin-right: 0px;
+    }
+    header .search-bar span{
+        right: 5px;
+    }
+    header .menu-btn{
+        margin-right: -10px;
+    }
+    .full-section .section-txt h1{
+        font-size: 1.5rem;
+    }
+    .full-section .section-btn button{
+        width: 255px;
+        height: 55px;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width:667px){
+    .services{
+        flex-direction: column;
+    }
+    .car-serve, .vehicle-serve{
+        margin-bottom: 25px;
+    }
+    .serve-detail hr{
+        width: 20%;
+    }
+
+    .photo-one, .photo-two, .photo-three, .photo-four, .photo-five, .photo-six{
+        width: 100%;
+    }
+    .photo-five{
+        margin-bottom: 30px;
+    }
+    footer{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .header-line{
+        width: 30%;
+    }
+    .header-title{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:490px){
+    .header-line{
+        display: none;
+    }
+    .header-title{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width:480px){
+    .contact-info, .links, .blog, .newsletter{
+        width: 100%;
+    }
+    .blog p{
+        padding-bottom: 15px;
+    }
+    .contact-info{
+        order: 3;
+    }
+    .newsletter{
+        order: 5;
+    }
+    .blog h2, .contact-info h2, .newsletter h2{
+        padding-top: 10px;
+    }
+    .newsletter h2{
+        padding-bottom: 20px;
+    }
+
+    .footer-txt{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-txt span{
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width:460px){
+    header .menu-btn{
+        margin-top: 15px;
+        margin-right: 0px;
+    }
+    header .search-bar{
+        display: none;
+    }
+    header .banner h1{
+        font-size: 1.4rem;
+    }
+    .full-section .section-txt h1{
+        font-size: 1.2rem;
+    }
+}
