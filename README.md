@@ -1,2 +1,2 @@
 # lifestyle
-https://khurramdeveloper55.github.io/savenature/   click to view website
+https://khurramdeveloper55.github.io/lifestyle/   click to view website
